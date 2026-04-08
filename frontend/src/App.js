@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 // const URL = "http://localhost/simple-project/api.php";
-const URL = "http://localhost/Simple_project/api.php";
+const URL = "http://localhost/Simple_project/api1.php";
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -10,6 +10,7 @@ function App() {
 
 const loadUsers = async () => {
   const res = await fetch(URL);
+  // const data = await res.json();
   const text = await res.text();   //  read raw response
 
   console.log("API RESPONSE:", text);
