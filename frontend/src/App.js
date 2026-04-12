@@ -10,12 +10,12 @@ function App() {
 
 const loadUsers = async () => {
   const res = await fetch(URL);
-  // const data = await res.json();
-  const text = await res.text();   //  read raw response
+  const data = await res.json();
+  // const text = await res.text();   //  read raw response
 
-  console.log("API RESPONSE:", text);
+  // console.log("API RESPONSE:", text);
 
-  const data = JSON.parse(text);
+  // const data = JSON.parse(text);
   setUsers(data);
 };
 

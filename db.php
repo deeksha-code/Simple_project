@@ -3,6 +3,7 @@ $conn = new mysqli("localhost", "root", "", "", 3307); // 👈 ADD PORT
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
+    exit();
 }
 
 // Create database
